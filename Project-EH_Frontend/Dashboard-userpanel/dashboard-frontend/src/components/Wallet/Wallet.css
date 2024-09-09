@@ -1,0 +1,136 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.inner-route-container {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+.wallet-container {
+  padding: 1rem; /* Apply uniform padding inside the container */
+  background: #f0f4f8;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Ensure the wallet container spans the full width */
+  margin: 0; /* Remove any margins that might cause gaps */
+}
+
+.wallet-header {
+  position: relative;
+  overflow: hidden;
+}
+
+.wallet-cover {
+  background-size: cover;
+  background-position: center;
+}
+
+.wallet-profile img {
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.wallet-content {
+  padding-top: 2rem;
+}
+
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.from-purple-500 {
+  --tw-gradient-from: #8b5cf6;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(139, 92, 246, 0));
+}
+
+.to-indigo-600 {
+  --tw-gradient-to: #4f46e5;
+}
+
+.wallet-balance-outer-container {
+  display: flex;
+  justify-content: space-between;
+}
+.text-lg md:text-xl font-semibold mb-2{
+ margin-left: 1%;
+ background-color: rebeccapurple;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1024px) {
+  .inner-route-container {
+    width: 100%;
+    margin: 0; /* Ensure no margin or gaps */
+    padding: 0; /* Ensure no padding or gaps */
+  }
+
+  .wallet-container {
+    padding: 1rem;
+    width: 100%;
+    margin: 0;
+  }
+}
+.profile-wrapper {
+  /* Increase the size of the wrapper */
+  width: 100px; /* Adjust this value as needed */
+  height: 100px; /* Adjust this value as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-wallet {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.profile-wallet:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5); /* Focus ring */
+}
+
+@media screen and (max-width: 640px) {
+  .wallet-container {
+    padding: 0.5rem;
+    margin: 0;
+    width: 100%;
+  }
+
+  .wallet-cover {
+    height: 8rem;
+  }
+
+  .wallet-profile img {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .wallet-content {
+    padding-top: 1.5rem;
+  }
+}
+.wallet-profile img {
+  width: 5rem; /* Mobile size */
+  height: 5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .wallet-profile img {
+    width: 10rem; /* Larger screen size */
+    height: 10rem;
+  }
+}

@@ -1,0 +1,74 @@
+
+pip install virtualenv
+
+python -m venv envname   // to create virtual environment for the django
+
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process   // to temporaryly enable script to run
+
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser   // to permanently enable script to run on the window
+
+
+.\djangoenv\Scripts\activate    // to activate the environment
+
+
+pip install django
+django-admin startproject my_project
+
+
+cd my_project
+python manage.py runserver
+
+
+python manage.py startapp 
+
+
+
+// To remove the node_modules
+Remove-Item -Recurse -Force node_modules
+
+
+// for the requirement.txt file, first make sure you are in the correct directory where requirement.txt file is located and execute the following
+// command
+
+pip install -r requirements.txt
+
+
+
+// Some minor issues in the terminal can be resolved through these commands
+
+npm cache clean --force
+
+npm update
+
+
+
+
+// For git issues while pushing
+
+
+# Set core.autocrlf to true if you're on Windows
+git config --global core.autocrlf true
+
+# Set core.autocrlf to input if you're on macOS/Linux
+git config --global core.autocrlf input
+
+
+// To bypass long file path while pushing project in github
+
+git config --system core.longpaths true
+
+git config --system --get core.longpaths   // It should return true to verify that the changes are made correctly
+
+
+
+// make changes in here
+C:\Program Files\Git\etc\gitconfig
+[core]
+    longpaths = true
+
+
+git reset
+git add .
+git commit -m "Fixed line endings and filename length issues"
+

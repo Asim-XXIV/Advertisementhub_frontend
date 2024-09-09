@@ -1,0 +1,120 @@
+.AsideAdContent-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #bdbdb9;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: #101010;
+    
+}
+
+/* Popup Styles */
+.AsideAdContent-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    padding-top: 20px;
+}
+
+.AsideAdContent-popupContent {
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+/* Close Button */
+.AsideAdContent-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.close-icon {
+    font-size: 20px;
+    line-height: 1;
+}
+
+/* Styles for individual ad squares */
+.ad-square {
+    width: 100%;
+    height: 15rem;
+    margin: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.ad-square:hover {
+    transform: scale(1.05);
+}
+
+.ad-square img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Mobile Specific Styles */
+@media (max-width: 768px) {
+    .AsideAdContent-container {
+        display: none;
+    }
+
+    .AsideAdContent-popup {
+        justify-content: flex-start;
+    }
+
+    .AsideAdContent-popupContent {
+        padding-top: 60px;
+    }
+
+    /* New styles for ad details */
+    .AsideAdContent-adDetails {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        overflow-y: auto;
+    }
+
+    .AsideAdContent-back {
+        margin-bottom: 20px;
+        padding: 10px;
+        background-color: #f0f0f0;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .AsideAdContent-adDetails img {
+        width: 100%;
+        max-height: 300px;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+}

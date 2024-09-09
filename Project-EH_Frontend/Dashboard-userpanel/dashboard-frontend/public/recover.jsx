@@ -1,0 +1,1 @@
+Now on put "mark as read" somewhere on the top of noticifation dropdown  do not change the functionalu=ity just add what i said and five me full css and jsx

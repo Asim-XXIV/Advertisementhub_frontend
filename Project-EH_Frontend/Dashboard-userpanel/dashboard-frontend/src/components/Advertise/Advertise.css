@@ -1,0 +1,172 @@
+/* Advertise.css
+
+.advertise-container {
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+
+.tab-container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tab-button {
+  transition: all 0.3s ease;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-right: 1rem;
+  border-radius: 20px;
+  padding: 0.5rem 1.5rem;
+}
+
+.tab-button:hover {
+  background-color: rgba(93, 64, 55, 0.1);
+}
+
+.tab-button.active {
+  background-color: #5D4037;
+  color: #fff;
+}
+
+.create-button {
+  background-color: #8D6E63;
+  color: #fff;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+}
+
+.create-button:hover {
+  background-color: #6D4C41;
+  box-shadow: 0 2px 8px rgba(109, 76, 65, 0.3);
+}
+
+.ad-card {
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.ad-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.ad-media {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.ad-content {
+  padding: 1.5rem;
+}
+
+.ad-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #3E2723;
+  margin-bottom: 0.5rem;
+}
+
+.ad-status {
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.ad-status.active {
+  background-color: #C8E6C9;
+  color: #2E7D32;
+}
+
+.ad-status.inactive {
+  background-color: #FFCDD2;
+  color: #C62828;
+}
+
+.ad-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  color: #5D4037;
+}
+
+.ad-info-icon {
+  margin-right: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.ad-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.ad-action-button {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.add-fund-button {
+  background-color: #D7CCC8;
+  color: #3E2723;
+}
+
+.add-fund-button:hover {
+  background-color: #BCAAA4;
+}
+
+.details-button {
+  background-color: #5D4037;
+  color: #fff;
+}
+
+.details-button:hover {
+  background-color: #4E342E;
+}
+
+.dialog-title {
+  background-color: #5D4037;
+  color: #fff;
+}
+
+.dialog-content {
+  padding-top: 1.5rem;
+}
+
+.dialog-actions {
+  padding: 1rem;
+}
+
+@media (max-width: 600px) {
+  .tab-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .tab-button, .create-button {
+    margin-bottom: 0.5rem;
+    width: 100%;
+  }
+
+  .ad-actions {
+    flex-direction: column;
+  }
+
+  .ad-action-button {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+} */

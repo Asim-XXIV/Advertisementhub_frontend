@@ -1,0 +1,211 @@
+.submissions-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color:   #c2c4c7;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.submissions-container h2 {
+  color: #343a40;
+  font-size: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.no-proofs {
+  text-align: center;
+  color: #6c757d;
+  font-style: italic;
+}
+
+.submissions-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.submission-item {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 20px;
+  transition: box-shadow 0.3s ease;
+  color: #275278;
+}
+
+.submission-item:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.submission-details p {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 10px;
+  color: #007bff;
+}
+
+.proof-section {
+  margin-top: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #f9f9f9;
+}
+
+.proof-section strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.proof-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.proof-item {
+  flex: 1;
+  max-width: calc(50% - 10px);
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.proof-item:hover {
+  transform: scale(1.05);
+}
+
+.proof-media {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.no-proof {
+  color: #6c757d;
+  font-style: italic;
+  text-align: center;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px; /* This creates space between the buttons */
+  margin-top: 20px;
+}
+
+.verify-button,
+.deny-button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  flex: 0 1 auto; /* This allows the buttons to shrink if needed */
+}
+
+/* Specific colors for each button */
+.verify-button {
+  background-color: #28a745;
+}
+
+.verify-button:hover {
+  background-color: #218838;
+}
+
+.deny-button {
+  background-color: #dc3545;
+}
+
+.deny-button:hover {
+  background-color: #c82333;
+}
+
+.enlarged-media-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.enlarged-media-content {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.enlarged-media-content img,
+.enlarged-media-content video {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .action-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .verify-button,
+  .deny-button {
+    width: 100%;
+    margin-bottom: 10px; /* Adds vertical space between buttons on small screens */
+  }
+}
+@media (max-width: 768px) {
+  .submissions-container {
+    padding: 15px;
+  }
+
+  .proof-container {
+    flex-direction: column;
+  }
+
+  .proof-item {
+    max-width: 100%;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .verify-button,
+  .deny-button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,143 @@
+/* Features.css */
+:root {
+  --primary-color: #4a90e2;
+  --secondary-color: #50c878;
+  --accent-color: #ff6b6b;
+  --text-color: #333333;
+  --card-background: #ffffff;
+  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --hover-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.section {
+  padding: 4rem 2rem;
+  background-color: #f8f9fa;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.feature-card {
+  background-color: var(--card-background);
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 4px solid var(--primary-color);
+}
+
+.feature-card:nth-child(2) {
+  border-top-color: var(--secondary-color);
+}
+
+.feature-card:nth-child(3) {
+  border-top-color: var(--accent-color);
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--hover-shadow);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.feature-card h2 {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.feature-card ul {
+  padding-left: 1.5rem;
+  color: var(--text-color);
+}
+
+.feature-card li {
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.feature-card li::before {
+  content: '•';
+  color: var(--primary-color);
+  font-weight: bold;
+  position: absolute;
+  left: -1rem;
+}
+
+.feature-card:nth-child(2) li::before {
+  color: var(--secondary-color);
+}
+
+.feature-card:nth-child(3) li::before {
+  color: var(--accent-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section {
+    padding: 2rem 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card {
+    padding: 1.5rem;
+  }
+
+  .feature-card h2 {
+    font-size: 1.3rem;
+  }
+
+  .feature-card p, .feature-card li {
+    font-size: 0.9rem;
+  }
+
+  .feature-icon {
+    font-size: 2.5rem;
+  }
+}
+
+/* Interactive Elements */
+.feature-card li:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.feature-card:nth-child(2) li:hover {
+  color: var(--secondary-color);
+}
+
+.feature-card:nth-child(3) li:hover {
+  color: var(--accent-color);
+}
